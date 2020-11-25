@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
         motor = GetComponent<PlayerMotor>();
     }
 
+    private float toPrint = 0f; // Passed to OnGUI, used for debug.
+
     private void Update()
     {
         // Calculate movement velocity as Vector3D
@@ -37,6 +39,8 @@ public class PlayerController : MonoBehaviour
         float _yRot = Input.GetAxisRaw("Mouse X");
         Vector3 _rotation = new Vector3(0f, _yRot, 0f) * lookSensitivity; // Turning only, not vertical look (which is camera-only)
 
+        toPrint = _yRot; // ##Debug
+
         // Apply rotation
         motor.Rotate(_rotation);
 
@@ -46,6 +50,11 @@ public class PlayerController : MonoBehaviour
 
         // Apply camera-only rotation
         motor.RotateCamera(_cameraRotation);
+    }
+
+    private void OnGUI()
+    {
+        GUI.Label(new Rect(0, 0, 100, 100), toPrint.ToString());
     }
 
 }

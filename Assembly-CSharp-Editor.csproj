@@ -326,9 +326,6 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="System.IO.Compression.FileSystem">
-      <HintPath>C:/Users/sasch/git_repos/first3d/Library/PackageCache/com.unity.connect.share@1.2.0-preview.1/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.CecilX">
       <HintPath>C:/Users/sasch/git_repos/first3d/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
     </Reference>
@@ -340,6 +337,9 @@
     </Reference>
     <Reference Include="Mono.CecilX.Rocks">
       <HintPath>C:/Users/sasch/git_repos/first3d/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>C:/Users/sasch/git_repos/first3d/Library/PackageCache/com.unity.connect.share@1.2.0-preview.1/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Users/sasch/git_repos/first3d/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -704,14 +704,6 @@
       <Project>{8B894E1E-C3DC-7884-9C46-1F5F045929F3}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="NavMeshComponentsEditor.csproj">
-      <Project>{A407B4F8-17D0-5B58-E3B9-A636DA338720}</Project>
-      <Name>NavMeshComponentsEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="NavMeshComponents.csproj">
-      <Project>{43DA5BBB-F0A9-E479-E662-CAF5859553D3}</Project>
-      <Name>NavMeshComponents</Name>
-    </ProjectReference>
     <ProjectReference Include="Mirror.Weaver.csproj">
       <Project>{2C94BCC9-B7CF-FE7B-B2F8-6959BFA30E2F}</Project>
       <Name>Mirror.Weaver</Name>
@@ -732,9 +724,17 @@
       <Project>{CCEECD79-C741-0CA9-4BFD-CA41B1ED1708}</Project>
       <Name>Mirror.CompilerSymbols</Name>
     </ProjectReference>
+    <ProjectReference Include="NavMeshComponentsEditor.csproj">
+      <Project>{A407B4F8-17D0-5B58-E3B9-A636DA338720}</Project>
+      <Name>NavMeshComponentsEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="Mirror.Cloud.csproj">
       <Project>{2D65F9EE-2842-2B8F-9DC7-71246AE1A50B}</Project>
       <Name>Mirror.Cloud</Name>
+    </ProjectReference>
+    <ProjectReference Include="NavMeshComponents.csproj">
+      <Project>{43DA5BBB-F0A9-E479-E662-CAF5859553D3}</Project>
+      <Name>NavMeshComponents</Name>
     </ProjectReference>
     <ProjectReference Include="Telepathy.csproj">
       <Project>{FA928ABF-06D7-6DFA-44F7-E885A1707881}</Project>
