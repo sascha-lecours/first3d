@@ -142,6 +142,8 @@
     <Compile Include="Assets\myFPS\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\myFPS\Assets\Scripts\PlayerMotor.cs" />
     <Compile Include="Assets\myFPS\Assets\Scripts\PlayerSetupScript.cs" />
+    <Compile Include="Assets\myFPS\Assets\Scripts\PlayerShoot.cs" />
+    <Compile Include="Assets\myFPS\Assets\Scripts\PlayerWeapon.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne_License.txt" />

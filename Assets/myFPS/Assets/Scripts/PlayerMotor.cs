@@ -35,12 +35,7 @@ public class PlayerMotor : MonoBehaviour
 
     public void Rotate(Vector3 _rotation)
     {
-        if (_rotation != Vector3.zero) // Don't let it reset to neutral too quickly - resets to zero in fixedupdate
-        {
             rotation = _rotation;
-        }
-        
-
     }
 
     public void RotateCamera(float _cameraRotationX)
@@ -53,10 +48,15 @@ public class PlayerMotor : MonoBehaviour
         thrusterForce = _thrusterForce;
     }
 
+    private void Update()
+    {
+        PerformRotation();
+    }
+
     private void FixedUpdate()
     {
         PerformMovement();
-        PerformRotation();
+        
     }
 
     //Perform movement based on velocity variable
