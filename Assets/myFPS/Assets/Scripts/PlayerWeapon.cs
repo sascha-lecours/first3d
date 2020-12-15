@@ -1,19 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Mirror;
+﻿using UnityEngine;
 
-public class Player : MonoBehaviour
+[System.Serializable]
+public class PlayerWeapon
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string name = "Glock";
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public float damage = 10f;
+    public float range = 100f;
+
 }

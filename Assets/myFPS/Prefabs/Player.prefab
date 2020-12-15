@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8915636015754150460}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Paddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,9 +50,9 @@ GameObject:
   - component: {fileID: 3146352335305348948}
   - component: {fileID: 6577494226568339775}
   - component: {fileID: 1786015618480065395}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -313,6 +313,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1ef2f1e01fd6e9478b350289d59e707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  weapon:
+    name: Glock
+    damage: 10
+    range: 100
+  cam: {fileID: 8915636016994606809}
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &8915636016747047434
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +334,7 @@ GameObject:
   - component: {fileID: 8915636016747047435}
   - component: {fileID: 8915636016747047445}
   - component: {fileID: 8915636016747047444}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PlayerModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -404,7 +414,7 @@ GameObject:
   - component: {fileID: 8915636016853062370}
   - component: {fileID: 8915636016853062369}
   - component: {fileID: 8915636016853062368}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Racket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,7 +506,7 @@ GameObject:
   - component: {fileID: 8915636016994606815}
   - component: {fileID: 8915636016994606809}
   - component: {fileID: 8915636016994606808}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,7 +588,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8915636017045337868}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
